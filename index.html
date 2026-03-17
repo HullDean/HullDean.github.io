@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HullDean</title>
+    <link rel="stylesheet" href="/style.css">
+    <!-- Google Fonts untuk tipografi Estetik -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome untuk Icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="dark-mode">
+    <!-- Animasi Background Bintang -->
+    <div class="background-animation">
+        <div class="stars" id="stars-container"></div>
+    </div>
+
+    <!-- Navigasi -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#home"><i class="fa-solid fa-train-tram"></i> HullDean Portofolio</a>
+        </div>
+        <div class="nav-links">
+            <a href="#home" class="nav-item active">Home</a>
+            <a href="#about" class="nav-item">About</a>
+            <a href="#skills" class="nav-item">Skills</a>
+            <a href="#projects" class="nav-item">Projects</a>
+            <a href="#contact" class="nav-item">Contact</a>
+        </div>
+        <div class="nav-actions">
+            <button id="theme-toggle" aria-label="Ganti Tema">
+                <i class="fa-solid fa-moon"></i>
+            </button>
+            <button id="mobile-menu-btn" aria-label="Menu" class="mobile-only">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#home" class="mobile-nav-item">Home</a>
+        <a href="#about" class="mobile-nav-item">About</a>
+        <a href="#skills" class="mobile-nav-item">Skills</a>
+        <a href="#projects" class="mobile-nav-item">Projects</a>
+        <a href="#contact" class="mobile-nav-item">Contact</a>
+    </div>
+
+    <!-- Konten Utama -->
+    <main class="container">
+
+        <!-- ================= HERO SECTION ================= -->
+        <section id="home" class="hero section">
+            <div class="hero-content reveal">
+                <span class="badge"><i class="fa-solid fa-star"></i> Trailblazer Level 65</span>
+                <h1 class="glitch" data-text="HELLO, I'M DAVIN.">HELLO, I'M HullDean.</h1>
+                <h2 class="subtitle type-writer">Frontend Developer & <span class="highlight">Gamer</span></h2>
+                <p>Menciptakan pengalaman hidup yang penuh dengan warna yang kontras dan penuh dengan keindahan. selamat
+                    datang di website ku!! :3</p>
+                <div class="cta-buttons">
+                    <a href="#projects" class="btn primary"><i class="fa-solid fa-rocket"></i> Lihat Portofolio</a>
+                    <a href="#contact" class="btn secondary"><i class="fa-solid fa-envelope"></i> Hubungi Saya</a>
+                </div>
+            </div>
+
+            <!-- Elemen visual kanan (Animasi CSS) -->
+            <div class="hero-image-container reveal-right">
+                <div class="floating-element">
+                    <div class="orb"></div>
+                    <div class="rings rings-1"></div>
+                    <div class="rings rings-2"></div>
+                    <img src="https://api.dicebear.com/7.x/bottts/svg?seed=Davin&backgroundColor=transparent"
+                        alt="Avatar" class="hero-avatar">
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= ABOUT SECTION ================= -->
+        <section id="about" class="section">
+            <div class="section-header reveal">
+                <h2><i class="fa-solid fa-user-astronaut"></i> About Me</h2>
+                <p>Data Profil HullDean</p>
+                <div class="divider"></div>
+            </div>
+
+            <div class="about-content">
+                <div class="about-card glass reveal-up">
+                    <div class="about-text">
+                        <h3>Perjalanan Sang Pelajar</h3>
+                        <p>Halo! Saya adalah seorang developer web yang sangat menyukai dunia teknologi dan desain
+                            antarmuka. Terinspirasi dari keindahan serta detail UI pada game Honkai: Star Rail, saya
+                            membangun setiap proyek web dengan orientasi pada <b>performa</b> dan <b>estetika
+                                visual</b>.</p>
+                        <p>Saya percaya bahwa kode yang baik adalah kode yang tidak hanya berfungsi secara logika, namun
+                            juga memberikan kesan pertama yang memukau bagi pengguna. Terutama animasi dan glassmorphism
+                            yang responsif!</p>
+                        <ul class="about-details">
+                            <li><i class="fa-solid fa-location-dot"></i> <strong>Lokasi:</strong> Indonesia (Bumi)</li>
+                            <li><i class="fa-solid fa-graduation-cap"></i> <strong>Pendidikan:</strong> Teknik
+                                Informatika</li>
+                            <li><i class="fa-solid fa-code"></i> <strong>Fokus:</strong> Frontend Web Development dan
+                                desain grafis</li>
+                            <li><i class="fa-solid fa-gamepad"></i> <strong>Hobi:</strong> Coding, Main Game, UI Design
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= SKILLS SECTION ================= -->
+        <section id="skills" class="section">
+            <div class="section-header reveal">
+                <h2><i class="fa-solid fa-bolt"></i> Database Keahlian</h2>
+                <p>Teknologi dan Path yang Saya Kuasai</p>
+                <div class="divider"></div>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Skill 1 -->
+                <div class="skill-card glass reveal-up" style="transition-delay: 0.1s;">
+                    <div class="skill-icon frontend"><i class="fa-brands fa-html5"></i></div>
+                    <h3>Frontend Core</h3>
+                    <p>Merakit struktur HTML5 semantik, styling modern CSS3 dengan animasi halus, dan logika interaktif
+                        JavaScript.</p>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar">
+                            <div class="progress"
+                                style="width: 90%; background: linear-gradient(90deg, #f97316, #eab308);"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill 2 -->
+                <div class="skill-card glass reveal-up" style="transition-delay: 0.2s;">
+                    <div class="skill-icon framework"><i class="fa-brands fa-react"></i></div>
+                    <h3>Frameworks</h3>
+                    <p>Penguasaan React.js dan Node.js lingkungan Vite, menciptakan Web yang sangat interaktif dan
+                        cepat.</p>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar">
+                            <div class="progress"
+                                style="width: 80%; background: linear-gradient(90deg, #06b6d4, #3b82f6);"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill 3 -->
+                <div class="skill-card glass reveal-up" style="transition-delay: 0.3s;">
+                    <div class="skill-icon design"><i class="fa-brands fa-figma"></i></div>
+                    <h3>UI/UX Design</h3>
+                    <p>Merancang UI/UX yang estetik, layout glassmorphism, hierarki warna memukau yang memanjakan mata.
+                    </p>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar">
+                            <div class="progress"
+                                style="width: 85%; background: linear-gradient(90deg, #ec4899, #8b5cf6);"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill 4 -->
+                <div class="skill-card glass reveal-up" style="transition-delay: 0.4s;">
+                    <div class="skill-icon tools"><i class="fa-brands fa-git-alt"></i></div>
+                    <h3>Tools & Node.js</h3>
+                    <p>Manajemen source code dengan Git/GitHub, NPM, backend dasar Node.js, dan pemahaman dasar
+                        deployment.</p>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar">
+                            <div class="progress"
+                                style="width: 75%; background: linear-gradient(90deg, #10b981, #14b8a6);"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PROJECTS SECTION ================= -->
+        <section id="projects" class="section">
+            <div class="section-header reveal">
+                <h2><i class="fa-solid fa-box-archive"></i> Arsip Proyek</h2>
+                <p>Koleksi Stellaron yang Disegel (Portofolio)</p>
+                <div class="divider"></div>
+            </div>
+
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass reveal-up">
+                    <div class="project-img">
+                        <div class="img-placeholder" style="background: linear-gradient(45deg, #4f46e5, #ec4899);">
+                            <i class="fa-solid fa-ticket"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>...</span><span>...</span><span>...</span>
+                        </div>
+                        <h3>comming soon...</h3>
+                        <p>belum sempet nambahin project :3</p>
+                        <a href="#projects" class="project-link">Lihat Detail <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass reveal-up" style="transition-delay: 0.1s;">
+                    <div class="project-img">
+                        <div class="img-placeholder" style="background: linear-gradient(45deg, #10b981, #3b82f6);">
+                            <i class="fa-solid fa-shop"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>...</span><span>...</span><span>...</span>
+                        </div>
+                        <h3>comming soon...</h3>
+                        <p>belum sempet nambahin project :3.</p>
+                        <a href="#projects" class="project-link">Lihat Detail <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass reveal-up" style="transition-delay: 0.2s;">
+                    <div class="project-img">
+                        <div class="img-placeholder" style="background: linear-gradient(45deg, #f59e0b, #ef4444);">
+                            <i class="fa-solid fa-book-journal-whills"></i>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>...</span><span>...</span><span>...</span>
+                        </div>
+                        <h3>comming soon</h3>
+                        <p>belom sempet :3.</p>
+                        <a href="#projects" class="project-link">Lihat Detail <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= CONTACT / SOCIAL MEDIA ================= -->
+        <section id="contact" class="section">
+            <div class="section-header reveal">
+                <h2><i class="fa-solid fa-satellite-dish"></i> Sinyal Komunikasi</h2>
+                <p>Kirim Pesan ke HullDean</p>
+                <div class="divider"></div>
+            </div>
+
+            <div class="contact-container glass reveal-up">
+                <div class="contact-info">
+                    <h3>Mari Berkolaborasi!</h3>
+                    <p>Punya proyek impian, butuh website responsif, atau hanya ingin mabar game? Jangan ragu untuk
+                        mengirimkan transmisi sinyal melalui kanal media sosial di bawah ini atau isi form disamping.
+                    </p>
+
+                    <div class="social-links">
+                        <a href="https://github.com/hulldean_" target="_blank" class="social-btn github"><i
+                                class="fa-brands fa-github"></i> GitHub</a>
+                        <a href="https://instagram.com/hulldean_" target="_blank" class="social-btn instagram"><i
+                                class="fa-brands fa-instagram"></i> Instagram</a>
+                        <a href="https://linkedin.com/in/hulldean_" target="_blank" class="social-btn linkedin"><i
+                                class="fa-brands fa-linkedin-in"></i> LinkedIn</a>
+                        <a href="https://discordapp.com/users/" target="_blank" class="social-btn discord"><i
+                                class="fa-brands fa-discord"></i> Discord</a>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nama </label>
+                        <input type="text" id="name" placeholder="Masukan nama kamu" required class="glass-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="contoh@domain.com" required class="glass-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Pesan </label>
+                        <textarea id="message" rows="4" placeholder="Ketik transmisi sinyalmu di sini..." required
+                            class="glass-input"></textarea>
+                    </div>
+                    <button type="submit" class="btn primary w-full"><i class="fa-solid fa-paper-plane"></i> Kirim
+                        Transmisi</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- ================= FOOTER ================= -->
+        <footer class="footer">
+            <div class="footer-content glass">
+                <div class="logo"><i class="fa-solid fa-train-tram"></i> HULLDEAN PORTOFOLIO</div>
+                <p>© 2026 HullDean. Dibuat dengan <i class="fa-solid fa-heart" style="color: #ef4444;"></i> dan
+                    teknologi.</p>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Tombol Back to Top -->
+    <a href="#home" class="back-to-top" id="back-to-top" aria-label="Kembali ke atas">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <script type="module" src="/script.js"></script>
+</body>
+
+</html>
